@@ -1,0 +1,3306 @@
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('/Themes/resources/fonts/IRANSansWeb_Medium.eot');
+    src: url('/Themes/resources/fonts/IRANSansWeb_Medium.eot?#iefix') format('eot'), /* IE6–8 */
+    url('/Themes/resources/fonts/IRANSansWeb_Medium.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('/Themes/resources/fonts/IRANSansWeb_Medium.ttf') format('ttf');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'BTitrBold';
+    src: url('/Themes/resources/fonts/BTitrBold.eot?#') format('eot'), url('/Themes/resources/fonts/BTitrBold.woff') format('woff'), url('/Themes/resources/fonts/BTitrBold.ttf') format('truetype');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'BKoodakBold';
+    src: url('/Themes/resources/fonts/BKoodakBold.eot?#') format('eot'), url('/Themes/resources/fonts/BKoodakBold.woff') format('woff'), url('/Themes/resources/fonts/BKoodakBold.ttf') format('truetype');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'BHoma';
+    src: url('/Themes/resources/fonts/BHoma.eot?#') format('eot'), url('/Themes/resources/fonts/BHoma.woff') format('woff'), url('/Themes/resources/fonts/BHoma.ttf') format('truetype');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'BYekan';
+    src: url('/Themes/resources/fonts/BYekan.woff') format('woff'), url('/Themes/resources/fonts/BHoma.ttf') format('truetype');
+    font-display: fallback;
+}
+
+[dir=rtl].ravesh-dropdown-menu,
+[dir=rtl].ravesh-form-builder,
+[dir=rtl].ravesh-form-builder input,
+[dir=rtl].ravesh-form-builder button,
+[dir=rtl].ravesh-form-builder textarea,
+[dir=rtl].ravesh-form-builder select {
+    font-family: 'IRANSansWeb',Tahoma;
+}
+
+[dir=ltr].ravesh-dropdown-menu,
+[dir=ltr].ravesh-form-builder,
+[dir=ltr].ravesh-form-builder input,
+[dir=ltr].ravesh-form-builder button,
+[dir=ltr].ravesh-form-builder textarea,
+[dir=ltr].ravesh-form-builder select {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+[dir=rtl].ravesh-dropdown-menu,
+[dir=rtl].ravesh-form-builder {
+    direction: rtl;
+    text-align: right;
+}
+
+.ravesh-form-builder.titles-top.frm-footer {
+    text-align: center;
+}
+
+    [dir=rtl].ravesh-dropdown-menu .float-left,
+    [dir=rtl].ravesh-form-builder .float-left {
+        float: left;
+    }
+
+    [dir=rtl].ravesh-dropdown-menu .float-right,
+    [dir=rtl].ravesh-form-builder .float-right {
+        float: right;
+    }
+
+
+[dir=ltr].ravesh-dropdown-menu [dir=ltr].ravesh-form-builder {
+    direction: ltr;
+    text-align: left;
+}
+
+[dir=ltr].ravesh-dropdown-menu .float-left,
+[dir=ltr].ravesh-form-builder .float-left {
+    float: right;
+}
+
+[dir=ltr].ravesh-dropdown-menu .float-right,
+[dir=ltr].ravesh-form-builder .float-right {
+    float: left;
+}
+
+
+.ravesh-form-builder .ravesh-button {
+    text-align: center;
+    border-radius: 2px;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-size: 12px !important;
+    border: none;
+    color: gray;
+    background-color: #eee;
+    outline: none;
+    line-height: 20px;
+    margin: 0 5px;
+    user-select: none;
+    min-width: auto;
+    font-weight: normal;
+    height: auto;
+    text-shadow: none;
+    position: relative;
+    opacity: 0.9;
+}
+
+    .ravesh-form-builder .ravesh-button:hover {
+        background-color: #e5e5e5;
+        color: #444;
+        opacity: 1;
+    }
+
+    .ravesh-form-builder .ravesh-button.submit {
+        background-color: #42a2eb;
+        color: white;
+    }
+
+        .ravesh-form-builder .ravesh-button.submit:hover {
+            background-color: #439bde;
+            color: white;
+        }
+
+
+.ravesh-form-builder .ravesh-form-loading-bar {
+    transition: all 0.3s ease-in-out;
+    height: 4px;
+    background-color: #4CAF50;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
+/*form design --> page*/
+.form-design-page {padding: 0 30%;}
+
+.form-design-page-content {
+    min-height: 80px;
+    padding: 10px;
+}
+
+.form-design-page-footer {
+    display: inline-block;
+}
+
+    .form-design-page-footer .ravesh-button {
+        min-width: 60px;
+        margin-right: 5px;
+        margin-left: 5px;
+        display: inline-block;
+    }
+
+/*form design --> section*/
+
+.form-design-section {
+    margin-bottom: 10px;
+}
+
+    .form-design-section:last-of-type {
+        margin-bottom: 1px;
+    }
+
+    .form-design-section .add-new,
+    .form-design-section .delete-field {
+        padding: 4px 2px 5px 2px;
+        font-size: 10px;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+.form-design-section-wrapper {
+    position: relative;
+}
+
+    .form-design-section-wrapper.style-border {
+        border: solid 1px #eee;
+    }
+
+        .form-design-section-wrapper.style-border .form-design-section-head {
+            border-bottom: solid 1px #eee;
+        }
+
+    .form-design-section-wrapper.selected.style-border .form-design-section-head {
+        border-bottom: solid 1px #ebc762;
+    }
+
+.insert-mode .form-design-section-wrapper.style-border .form-design-section-head {
+    background: #f9f9f9;
+}
+
+
+.form-design-section-head {
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    padding: 0 10px;
+    transition: background 300ms,border 300ms;
+    border-bottom: solid 1px white;
+}
+
+    .form-design-section-head .title {
+        display: inline-block;
+        background: none !important;
+    }
+
+.insert-mode .form-design-section-content {
+    min-height: 65px;
+    padding: 10px 5px 0;
+}
+
+.form-design-section-wrapper .col-full {
+    width: 100%;
+}
+
+.form-design-section-wrapper .col-2-3 {
+    width: 66.66%;
+}
+
+.form-design-section-wrapper .col-1-3 {
+    width: 33.33%;
+}
+
+.form-design-section-wrapper .col-1-2 {
+    width: 50%;
+}
+
+.form-design-section-wrapper .col-1-4 {
+    width: 25%;
+}
+
+.form-design-section-wrapper .col-3-4 {
+    width: 75%;
+}
+
+
+
+.ravesh-form-size-medium .form-design-section-wrapper .col-2-3 {
+    width: 50%;
+}
+
+.ravesh-form-size-medium .form-design-section-wrapper .col-1-3 {
+    width: 50%;
+}
+
+.ravesh-form-size-medium .form-design-section-wrapper .col-1-2 {
+    width: 50%;
+}
+
+.ravesh-form-size-medium .form-design-section-wrapper .col-1-4 {
+    width: 50%;
+}
+
+.ravesh-form-size-medium .form-design-section-wrapper .col-3-4 {
+    width: 50%;
+}
+
+
+
+.ravesh-form-size-small .form-design-section-wrapper .col-2-3 {
+    width: 100%;
+}
+
+.ravesh-form-size-small .form-design-section-wrapper .col-1-3 {
+    width: 100%;
+}
+
+.ravesh-form-size-small .form-design-section-wrapper .col-1-2 {
+    width: 100%;
+}
+
+.ravesh-form-size-small .form-design-section-wrapper .col-1-4 {
+    width: 100%;
+}
+
+.ravesh-form-size-small .form-design-section-wrapper .col-3-4 {
+    width: 100%;
+}
+
+
+/*form design --> fields*/
+.form-design-field {
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.insert-mode .form-design-field .content {
+    padding: 10px 5px 0;
+    min-height: 30px;
+    font-size: 12px;
+    color: #444444;
+}
+
+.form-design-field .wrapper {
+    transition: opacity 300ms;
+}
+
+.form-design-field .title {
+    font-weight: bold;
+    font-size: 11px;
+    font-weight: bold;
+    font-size: 11px;
+    margin: 0 !important;
+    background: none !important;
+}
+
+    .form-design-field .title .title-str {
+        display: inline-block;
+        line-height: 15px;
+        color: #eaeaea;
+    }
+
+    .form-design-field .title .help-icon {
+        background: url(/pages/FormBuilder/images/question-mark.png);
+        background-size: 16px 16px;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        margin: -5px 5px 0;
+        position: relative;
+        top: 5px;
+        cursor: help;
+    }
+
+.form-design-field .detail {
+    font-size: 10px;
+    color: #999;
+    font-style: italic;
+    padding: 5px 2px;
+}
+
+.form-design-field.hidden-title .title {
+    display: none;
+}
+
+.form-design-field.hidden-title .wrapper {
+    width: 100% !important;
+}
+
+.form-design-field .required {
+    display: none;
+}
+
+    .form-design-field.required .required {
+        display: initial;
+    }
+
+.titles-top .form-design-field .title .title-str {
+    margin-bottom: 5px;
+}
+
+[dir=rtl].titles-top .form-design-field .btns {
+    left: 0;
+}
+
+[dir=ltr].titles-top .form-design-field .btns {
+    right: 0;
+}
+
+[dir=rtl].titles-left .form-design-field .title .title-str,
+[dir=rtl].titles-right .form-design-field .title .title-str {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+[dir=rtl].titles-left .form-design-field .title,
+[dir=rtl].titles-right .form-design-field .title {
+    float: right;
+    width: 25%;
+}
+
+[dir=rtl].titles-left .form-design-field .wrapper,
+[dir=rtl].titles-right .form-design-field .wrapper {
+    float: left;
+    width: 75%;
+    overflow: hidden;
+}
+
+[dir=rtl].titles-left .form-design-field .title {
+    text-align: left;
+}
+
+
+[dir=ltr].titles-left .form-design-field .title .title-str,
+[dir=ltr].titles-right .form-design-field .title .title-str {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+[dir=ltr].titles-left .form-design-field .title,
+[dir=ltr].titles-right .form-design-field .title {
+    float: left;
+    width: 25%;
+}
+
+[dir=ltr].titles-left .form-design-field .wrapper,
+[dir=ltr].titles-right .form-design-field .wrapper {
+    float: right;
+    width: 75%;
+    overflow: hidden;
+}
+
+[dir=ltr].titles-right .form-design-field .title {
+    text-align: right;
+}
+
+
+/*form wizard*/
+.ravesh-form-builder.frm-header {
+    text-align: center;
+    direction: ltr;
+    border-bottom: solid 1px #c4c4c4;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+    z-index: 1;
+    position: relative;
+    padding-top: 15px;
+}
+
+.form-design-page-step.allow-click.style-1 {
+    cursor: pointer;
+}
+
+.form-design-page-step.style-1 {
+    display: inline-block;
+    text-align: center;
+    min-width: 180px;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+    cursor: default;
+}
+
+    .form-design-page-step.style-1 .box-wizard {
+        height: 4px;
+        background: #03A9F4;
+    }
+
+    .form-design-page-step.style-1 .number-wizard {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background: #03A9F4;
+        border-radius: 50%;
+        font-size: 15px;
+        margin: auto;
+        margin-bottom: -15px;
+        color: #fff;
+    }
+
+    .form-design-page-step.style-1 .title-wizard {
+        margin: 25px 10px 10px;
+        font-size: 12px;
+        color: #000;
+        background: none;
+    }
+
+    .form-design-page-step.style-1.active {
+        cursor: default;
+        opacity: 1;
+    }
+
+.form-design-page-step.allow-click.style-1:hover {
+    opacity: 1;
+}
+
+
+
+/*FORM INPUTS-----------------------------------------*/
+.form-design-field .form-input {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 7px 5px;
+    font-size: 11px;
+    box-sizing: border-box;
+    max-width: 100% !important;
+    height: 35px;
+    outline: none;
+    border-width: 0px 0px 2px !important;
+}
+
+    .form-design-field .form-input:disabled {
+        background: #f1f1f1 !important;
+        border: solid 1px #ccc;
+    }
+
+    .form-design-field .form-input:focus {
+        border: solid 1px #03A9F4;
+    }
+
+.form-design-field .form-input:-webkit-autofill,
+.form-design-field .form-input:-webkit-autofill:hover, 
+.form-design-field .form-input:-webkit-autofill:focus, 
+.form-design-field .form-input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+}
+
+.ravesh-form-control {
+    display: inline-block;
+    position: relative;
+    margin: 4px 0 4px 0;
+    font-size: 11px;
+    line-height: 20px;
+    min-height: 20px;
+    min-width: 20px;
+}
+
+    .ravesh-form-control.no-text {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+[dir=rtl] .ravesh-form-control {
+    padding: 0 25px 0 15px;
+}
+
+[dir=ltr] .ravesh-form-control {
+    padding: 0 15px 0 25px;
+}
+
+.ravesh-form-control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.ravesh-form-control-indicator {
+    position: absolute;
+    top: 0;
+    height: 18px;
+    width: 18px;
+    background: #ffffff;
+    cursor: pointer;
+    border: solid 1px #767676;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+[dir=rtl] .ravesh-form-control-indicator {
+    right: 0;
+    left: auto;
+}
+
+[dir=ltr] .ravesh-form-control-indicator {
+    left: 0;
+    right: auto;
+}
+
+.ravesh-form-control span {
+    cursor: pointer;
+}
+
+.ravesh-form-control-radio .ravesh-form-control-indicator {
+    border-radius: 50%;
+}
+
+.ravesh-form-control:hover input ~ .ravesh-form-control-indicator,
+.ravesh-form-control input:focus ~ .ravesh-form-control-indicator {
+    background: #ccc;
+}
+
+.ravesh-form-control input:checked ~ .ravesh-form-control-indicator {
+    background: #03a9f4;
+    border: none;
+}
+
+.ravesh-form-control:hover input:not([disabled]):checked ~ .ravesh-form-control-indicator,
+.ravesh-form-control input:checked:focus ~ .ravesh-form-control-indicator {
+    background: #0277bd;
+}
+
+.ravesh-form-control input:disabled ~ .ravesh-form-control-indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: default;
+}
+
+.ravesh-form-control input:disabled ~ span {
+    color: gray;
+    cursor: default;
+}
+
+.ravesh-form-control-indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.ravesh-form-control input:checked ~ .ravesh-form-control-indicator:after {
+    display: block;
+}
+
+.ravesh-form-control-checkbox .ravesh-form-control-indicator:after {
+    left: 7px;
+    top: 3px;
+    width: 3px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    box-sizing: content-box;
+}
+
+.ravesh-form-control-checkbox input:disabled ~ .ravesh-form-control-indicator:after {
+    border-color: #7b7b7b;
+}
+
+.ravesh-form-control-radio .ravesh-form-control-indicator:after {
+    left: 6px;
+    top: 6px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.ravesh-form-control-radio input:disabled ~ .ravesh-form-control-indicator:after {
+    background: #7b7b7b;
+}
+
+/* VALIDATION -----------------------------------------*/
+.ravesh-error-tip {
+    position: absolute;
+    display: inline-block;
+    background: #dd4b39;
+    color: white;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 0 7px;
+    min-width: 150px;
+    height: 25px;
+    line-height: 26px;
+    font-size: 10px;
+    z-index: 1;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+    .ravesh-error-tip:hover {
+        background: #cf4534;
+    }
+
+    .ravesh-error-tip:after {
+        position: absolute;
+        top: -13px;
+        right: 13px;
+        border-top: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+        border-bottom: 7px solid #dd4b39;
+        content: " ";
+    }
+
+[dir=ltr] .ravesh-error-tip:after {
+    left: 13px;
+    right: auto;
+}
+
+.ravesh-error-tip:hover:after {
+    border-bottom: 7px solid #cf4534;
+}
+
+/*tooltip-----------------*/
+.ravesh-tooltips {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    font-size: 11px;
+    line-height: 18px;
+    border-radius: 3px;
+    max-width: 160px;
+    min-width: 45px;
+    box-sizing: border-box;
+    display: inline-block;
+    z-index: 1;
+    font-family: iransans,tahoma;
+    font-size: 8pt;
+}
+
+    .ravesh-tooltips:after {
+        position: absolute;
+        bottom: -7px;
+        left: 50%;
+        margin-left: -7px;
+        width: 0;
+        border-top: 7px solid rgba(0,0,0,0.7);
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+        content: " ";
+        font-size: 0;
+        line-height: 0;
+    }
+
+
+.spinner {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: solid 2px;
+    border-radius: 100%;
+    animation: spinner 1s infinite linear;
+    border-color: rgba(0, 0, 0, .1);
+    border-top-color: rgb(0, 0, 0);
+}
+
+    .spinner.small {
+        width: 16px;
+        height: 16px;
+    }
+
+    .spinner.large {
+        width: 48px;
+        height: 48px;
+    }
+
+    .spinner.white {
+        border-color: rgba(255, 255, 255, .1);
+        border-top-color: rgb(255, 255, 255);
+    }
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+[dir=rtl].ravesh-form-main-container {
+    font-family: 'IRANSansWeb',Tahoma;
+}
+
+[dir=ltr].ravesh-form-main-container {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+
+.ravesh-form-main-container>.ravesh-form-container {
+    position: relative;
+    padding-top: 0 !important;
+    border: 3px solid rgb(136, 222, 0);
+    border-radius: 15px;
+    background: #4444448f;
+    box-shadow: 0 0 22px 2px rgba(136, 222, 0, 0.26);
+}
+
+
+
+.ravesh-form-main-loading {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.5);
+}
+
+.ravesh-form-main-loading-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: white;
+    border: solid 1px #aaa;
+    padding: 10px 15px;
+    line-height: 30px;
+    margin-left: -75px;
+    margin-top: -25px;
+}
+
+    .ravesh-form-main-loading-box .spinner {
+        float: right;
+    }
+
+    .ravesh-form-main-loading-box span {
+        margin: 0 10px;
+        font-size: 12px;
+    }
+
+
+
+.ravesh-form-wrapper {
+}
+
+    .redirect-bar {
+        border: solid 1px #ddd;
+        background: #f9f9f9;
+        padding: 5px 25px;
+        box-sizing: border-box;
+        margin: 10px;
+        overflow: hidden;
+    }
+
+.ravesh-form-wrapper-title {
+    height: 70px;
+    padding: 27px 20px;
+    box-sizing: border-box;
+}
+
+    .ravesh-form-wrapper-title h1 {
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+        font-weight: normal;
+        margin-top: 5px;
+    }
+
+    .ravesh-form-wrapper-title h2 {
+        font-size: 12px;
+        margin: 0;
+        margin-top: 5px;
+        color: #999;
+        padding: 0;
+        line-height: 1;
+        font-weight: normal;
+    }
+
+    .ravesh-form-wrapper-title.has-detail {
+        padding-top: 15px;
+    }
+
+
+.ravesh-form-style-page.ravesh-form-main-container {
+    padding: 100px;
+    padding-top: 0;
+}
+
+    .ravesh-form-style-page.ravesh-form-main-container.medium {
+        padding: 50px;
+    }
+
+    .ravesh-form-style-page.ravesh-form-main-container.small {
+        padding: 10px;
+    }
+
+
+/* style page*/
+/*
+.ravesh-form-style-page .ravesh-form-wrapper-title {
+    display: block;
+}
+
+.ravesh-form-wrapper .ravesh-form-builder.frm-header {
+    padding: 20px 0 10px;
+}
+
+.ravesh-form-style-page .ravesh-form-wrapper-title {
+    display: block;
+}
+
+.ravesh-form-style-page .ravesh-form-wrapper {
+    margin: auto;
+    border: solid 1px #ddd;
+    box-shadow: 0 2px 2px 0px rgba(0,0,0,0.2);
+    max-width: 1200px;
+}
+
+
+    */
+
+/*-mini dialog------------------------------------*/
+.ravesh-mini-dialog-overlay {
+    z-index: 10000000;
+    background: rgba(255,255,255,0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.ravesh-mini-dialog {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 5px 10px 0px #ddd;
+    border: solid 1px #c1c1c1;
+    transition: width .5s,height .5s;
+    cursor: default;
+    min-height: 30%;
+    max-height: 100%;
+    width: 70%;
+    overflow: hidden;
+    margin: auto;
+    padding-top: 60px;
+    font-family: 'IRANSansWeb',Tahoma;
+}
+
+    .ravesh-mini-dialog .ravesh-header {
+        height: 60px;
+        margin-top: -60px;
+        line-height: 60px;
+        padding: 0 20px;
+        font-size: 16px;
+        text-align: right;
+    }
+
+    .ravesh-mini-dialog .ravesh-close-btn {
+        background: url(../../../pages/formbuilder/images/icon-close.png) no-repeat;
+        background-size: 16px 16px;
+        width: 16px;
+        height: 16px;
+        float: left;
+        margin: 20px 0;
+        opacity: 0.4;
+        cursor: pointer;
+    }
+
+        .ravesh-mini-dialog .ravesh-close-btn:hover {
+            opacity: 1;
+        }
+
+    .ravesh-mini-dialog .ravesh-content-scroll {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+/*-time picker------------------------------------*/
+.ravesh-time-picker {
+    background: white;
+    user-select: none;
+    min-width: 220px;
+    display: inline-block;
+}
+
+    .ravesh-time-picker * {
+        box-sizing: content-box;
+    }
+
+    .ravesh-time-picker .preview {
+        height: 60px;
+        line-height: 60px;
+        font-size: 30px;
+        text-align: center;
+        color: gray;
+    }
+
+        .ravesh-time-picker .preview .hour:hover,
+        .ravesh-time-picker .preview .min:hover,
+        .ravesh-time-picker .preview .hour.active,
+        .ravesh-time-picker .preview .min.active {
+            color: #03A9F4;
+        }
+
+        .ravesh-time-picker .preview .hour,
+        .ravesh-time-picker .preview .min {
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+    .ravesh-time-picker .cancel {
+        color: gray;
+        text-align: center;
+        font-size: 11px;
+        line-height: 25px;
+        cursor: pointer;
+    }
+
+        .ravesh-time-picker .cancel span:hover {
+            text-decoration: underline;
+            color: #03A9F4;
+        }
+
+    .ravesh-time-picker .clock-container {
+        height: 205px;
+        padding: 30px 15px 15px;
+        background: #f2f2f2;
+        position: relative;
+        touch-action: none;
+    }
+
+    .ravesh-time-picker .clock {
+        width: 190px;
+        height: 190px;
+        background: white;
+        margin: auto;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        cursor: move;
+    }
+
+        .ravesh-time-picker .clock .num {
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            height: 23px;
+            line-height: 23px;
+            top: 85px;
+            font-size: 15px;
+            color: #666;
+        }
+
+        .ravesh-time-picker .clock .handle-bar {
+            transform-origin: bottom;
+            background: #03A9F4;
+            position: absolute;
+            bottom: 95px;
+            left: 95px;
+            width: 2px;
+            height: 80px;
+        }
+
+        .ravesh-time-picker .clock .handle {
+            background: #03A9F4;
+            position: absolute;
+            width: 27px;
+            height: 27px;
+            line-height: 27px;
+            border-radius: 50%;
+            top: 83px;
+            left: 83px;
+            color: white;
+            text-align: center;
+            font-size: 15px;
+        }
+
+    .ravesh-time-picker .pm-btn,
+    .ravesh-time-picker .am-btn {
+        position: absolute;
+        bottom: 15px;
+        font-size: 12px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 50%;
+        padding: 2px;
+        text-align: center;
+        cursor: pointer;
+        background: white;
+        color: gray;
+    }
+
+        .ravesh-time-picker .pm-btn.active,
+        .ravesh-time-picker .am-btn.active {
+            background: #03A9F4;
+            color: white;
+        }
+
+    .ravesh-time-picker.dir-rtl .am-btn {
+        right: 15px;
+    }
+
+    .ravesh-time-picker.dir-rtl .pm-btn {
+        left: 15px;
+    }
+
+    .ravesh-time-picker.dir-ltr .am-btn {
+        left: 15px;
+    }
+
+    .ravesh-time-picker.dir-ltr .pm-btn {
+        right: 15px;
+    }
+
+
+/*-drop down------------------------------------*/
+.ravesh-dropdown {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    max-width: 100% !important;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    box-sizing: border-box;
+    height: 35px;
+}
+
+    .ravesh-dropdown.dir-rtl {
+        direction: rtl;
+        text-align: right;
+        border-width: 0px 0px 2px !important;
+    }
+
+    .ravesh-dropdown.dir-ltr {
+        direction: ltr;
+        text-align: left;
+    }
+
+    .ravesh-dropdown input[type="text"] {
+        font-size: 11px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 35px;
+        position: relative;
+        border-width: 0px 0px 2px !important;
+        padding: 5px 7px;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        color: inherit;
+    }
+
+    .ravesh-dropdown.active {
+        background-color: #fdfdfd;
+        border: 1px solid #03A9F4;
+    }
+
+        .ravesh-dropdown.active input[type="text"] {
+            cursor: text;
+        }
+
+            .ravesh-dropdown.active input[type="text"]:read-only {
+                cursor: pointer;
+            }
+
+    .ravesh-dropdown.disabled {
+        background: #f1f1f1;
+        border: solid 1px #ccc;
+        color: gray;
+        cursor: default !important;
+    }
+
+    .ravesh-dropdown.dir-rtl input[type="text"] {
+        padding-left: 25px;
+    }
+
+    .ravesh-dropdown.dir-ltr input[type="text"] {
+        padding-right: 25px;
+    }
+
+    .ravesh-dropdown.disabled .arrow:after {
+        border-top-color: gray;
+    }
+
+    .ravesh-dropdown.no-arrow input[type="text"] {
+        padding: 5px 7px;
+        cursor: text;
+    }
+
+    .ravesh-dropdown .arrow {
+        position: absolute;
+        top: 0;
+        width: 25px;
+        height: 35px;
+        border-color: #000;
+    }
+
+        .ravesh-dropdown .arrow:after {
+            margin: 15px 8px;
+            content: ' ';
+            border-top: 6px solid black;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-top-color: inherit;
+        }
+
+    .ravesh-dropdown.dir-rtl .arrow {
+        left: 0;
+        color: rgb(136, 222, 0) !important;
+        border-color: rgb(136, 222, 0) !important;
+    }
+
+    .ravesh-dropdown.dir-ltr .arrow {
+        right: 0;
+    }
+
+.ravesh-dropdown-menu {
+    position: absolute;
+    z-index: 10000001;
+    min-width: 50px;
+    background-color: #ffffff;
+    border: 1px solid #03A9F4;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+}
+
+    .ravesh-dropdown-menu.open {
+        -webkit-animation: rvc-comingIn 0.2s ease;
+        animation: rvc-comingIn 0.2s ease;
+    }
+
+    .ravesh-dropdown-menu .option-group {
+        background: #eee;
+        font-size: 11px;
+        padding: 10px 5px;
+        cursor: default;
+    }
+
+    .ravesh-dropdown-menu .option {
+        font-size: 11px;
+        cursor: pointer;
+    }
+
+        .ravesh-dropdown-menu .option:active,
+        .ravesh-dropdown-menu .option:hover,
+        .ravesh-dropdown-menu .option:hover .single-line {
+            background: #03A9F4 !important;
+            color: white !important;
+        }
+
+        .ravesh-dropdown-menu .option.selected {
+            background: #f9f9f9;
+            color: #000;
+        }
+
+        .ravesh-dropdown-menu .option .single-line {
+            display: inline-block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            line-height: 30px;
+            padding: 0 7px;
+        }
+
+        .ravesh-dropdown-menu .option .picture-and-detail {
+            overflow: hidden;
+        }
+
+            .ravesh-dropdown-menu .option .picture-and-detail .picture {
+                width: 30px;
+                height: 30px;
+                margin: 7px 10px;
+                border-radius: 50%;
+                background: #e5e5e5;
+                line-height: 30px;
+                text-align: center;
+                color: gray;
+                font-size: 13px;
+            }
+
+
+            .ravesh-dropdown-menu .option .picture-and-detail .title {
+                margin-top: 11px;
+                color: #444;
+                font-weight: bold;
+            }
+
+            .ravesh-dropdown-menu .option .picture-and-detail .detail {
+                margin-top: 2px;
+                color: #aaa;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                line-height: 13px;
+            }
+
+        .ravesh-dropdown-menu .option:hover .picture-and-detail .detail,
+        .ravesh-dropdown-menu .option:hover .picture-and-detail .title {
+            color: #fff;
+        }
+
+
+        .ravesh-dropdown-menu .option .title-and-detail {
+            overflow: hidden;
+            height: 40px;
+            padding: 0 10px;
+            line-height: 1;
+        }
+
+            .ravesh-dropdown-menu .option .title-and-detail .title {
+                margin-top: 9px;
+                color: #444;
+                font-weight: bold;
+            }
+
+            .ravesh-dropdown-menu .option .title-and-detail .detail {
+                margin-top: 2px;
+                color: #aaa;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                line-height: 13px;
+            }
+
+        .ravesh-dropdown-menu .option:hover .title-and-detail .detail,
+        .ravesh-dropdown-menu .option:hover .title-and-detail .title {
+            color: #fff;
+        }
+
+
+    .ravesh-dropdown-menu .option-product {
+        height: 70px;
+        overflow: hidden;
+    }
+
+        .ravesh-dropdown-menu .option-product .picture {
+            width: 50px;
+            height: 50px;
+            margin: 10px 13px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .ravesh-dropdown-menu .option-product .title {
+            font-weight: bold;
+            font-size: 11px;
+            margin-top: 15px;
+            overflow: hidden;
+            white-space: nowrap;
+            line-height: 13px;
+        }
+
+        .ravesh-dropdown-menu .option-product .detail {
+            margin-top: 3px;
+            color: #aaaaaa;
+        }
+
+        .ravesh-dropdown-menu .option-product .price {
+            margin-top: 8px;
+            color: #DD4B39;
+            font-size: 12px;
+        }
+
+        .ravesh-dropdown-menu .option-product .picture i {
+            font-size: 19px;
+        }
+
+    .ravesh-dropdown-menu .option:hover .option-product .detail,
+    .ravesh-dropdown-menu .option:hover .option-product .price,
+    .ravesh-dropdown-menu .option:hover .option-product .title {
+        color: #fff;
+    }
+
+    .ravesh-dropdown-menu .option-sales .price {
+        margin-top: 3px;
+        color: #DD4B39;
+        font-size: 12px;
+    }
+
+    .ravesh-dropdown-menu .option-sales {
+        height: 55px;
+        overflow: hidden;
+        padding: 5px 10px;
+        box-sizing: border-box;
+    }
+
+        .ravesh-dropdown-menu .option-sales .title {
+            font-weight: bold;
+            margin-top: 3px;
+            overflow: hidden;
+            white-space: nowrap;
+            line-height: 13px;
+        }
+
+        .ravesh-dropdown-menu .option-sales .detail {
+            color: #aaa;
+            margin-top: 4px;
+        }
+
+    .ravesh-dropdown-menu .option:hover .option-sales .detail,
+    .ravesh-dropdown-menu .option:hover .option-sales .price,
+    .ravesh-dropdown-menu .option:hover .option-sales .title {
+        color: #fff;
+    }
+
+
+.ravesh-dropdown .loading {
+    position: absolute;
+    top: 0;
+    margin: 7px 7px 0;
+    background: none !important;
+}
+
+.ravesh-dropdown.dir-rtl .loading {
+    left: 0;
+}
+
+.ravesh-dropdown.dir-ltr .loading {
+    right: 0;
+}
+
+.ravesh-multi-selector {
+    max-width: 100%;
+    min-height: 35px;
+    padding: 0 5px 5px;
+    cursor: pointer;
+}
+
+    .ravesh-multi-selector .item {
+        display: inline-block;
+        background: #ededed;
+        border-radius: 7px;
+        line-height: 1;
+    }
+
+        .ravesh-multi-selector .item span {
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+        .ravesh-multi-selector .item i {
+            padding: 5px;
+        }
+
+[dir=rtl] .ravesh-multi-selector .item {
+    margin: 5px 0 0 5px;
+}
+
+    [dir=rtl] .ravesh-multi-selector .item span {
+        margin-left: 5px;
+    }
+
+[dir=ltr] .ravesh-multi-selector .item {
+    margin: 5px 5px 0 0;
+}
+
+    [dir=ltr] .ravesh-multi-selector .item span {
+        margin-right: 5px;
+    }
+
+/*- drill down -------------------------------------*/
+.ravesh-drill-down {
+    height: 290px;
+    box-sizing: border-box;
+}
+
+    .ravesh-drill-down .drill-down-option {
+        height: 30px;
+        line-height: 30px;
+        font-size: 11px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+[dir=rtl] .ravesh-drill-down .drill-down-option.hasChild {
+    padding: 0 0 0 30px;
+}
+
+[dir=ltr] .ravesh-drill-down .drill-down-option.hasChild {
+    padding: 0 30px 0 0;
+}
+
+.ravesh-drill-down .drill-down-option-child {
+    width: 30px;
+    height: 30px;
+}
+
+[dir=rtl] .ravesh-drill-down .drill-down-option-child {
+    float: left;
+    margin-left: -30px;
+}
+
+[dir=ltr] .ravesh-drill-down .drill-down-option-child {
+    float: right;
+    margin-right: -30px;
+}
+
+.ravesh-drill-down .drill-down-option-child span {
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    margin: 12px 13px;
+    width: 0;
+    height: 0;
+    display: block;
+}
+
+[dir=rtl] .ravesh-drill-down .drill-down-option-child span {
+    border-right: 5px solid black;
+    border-left: none;
+}
+
+[dir=ltr] .ravesh-drill-down .drill-down-option-child span {
+    border-left: 5px solid black;
+    border-right: none;
+}
+
+.ravesh-drill-down .drill-down-option-child:hover {
+    background: #03A9F4 !important;
+}
+
+[dir=rtl] .ravesh-drill-down .drill-down-option-child:hover span {
+    border-right-color: white;
+}
+
+[dir=ltr] .ravesh-drill-down .drill-down-option-child:hover span {
+    border-left-color: white;
+}
+
+.ravesh-drill-down .drill-down-option-title {
+    padding: 0 7px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #222;
+}
+
+[dir=rtl] .ravesh-drill-down .drill-down-option-title {
+    float: right;
+}
+
+[dir=ltr] .ravesh-drill-down .drill-down-option-title {
+    float: left;
+}
+
+.ravesh-drill-down .drill-down-option-title:hover {
+    background: #03A9F4 !important;
+    color: white !important;
+}
+
+.ravesh-drill-down-panel-title {
+    font-size: 11px;
+    font-weight: bold;
+    cursor: default;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 12px 7px 9px;
+}
+
+.has-breadcrumb .ravesh-drill-down-panel-title {
+    padding: 5px 7px 7px;
+}
+
+.ravesh-drill-down-panel-head {
+    border-bottom: solid 1px #eee;
+    background: #f7f7f7;
+    box-sizing: border-box;
+}
+
+.ravesh-drill-down-breadcrumb {
+    display: inline-block;
+    font-size: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+[dir=rtl] .ravesh-drill-down-breadcrumb {
+    padding: 8px 7px 2px 2px;
+}
+
+[dir=ltr] .ravesh-drill-down-breadcrumb {
+    padding: 8px 2px 2px 7px;
+}
+
+/*menu-----------------*/
+.ravesh-menu {
+    position: absolute;
+    z-index: 10000002;
+    min-width: 50px;
+    background-color: white;
+    border: 1px solid #CCC;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+    .ravesh-menu.open {
+        -webkit-animation: rvc-comingIn 0.2s ease;
+        animation: rvc-comingIn 0.2s ease;
+    }
+
+    .ravesh-menu .option {
+        line-height: 45px;
+        height: 45px;
+        overflow: hidden;
+        font-size: 12px;
+        color: #444;
+        cursor: pointer;
+        transition: background .3s;
+        display: block;
+        text-decoration: none;
+    }
+
+        .ravesh-menu .option:hover {
+            background: #f9f9f9;
+            color: #000;
+        }
+
+        .ravesh-menu .option span {
+            margin: 0 18px;
+        }
+
+        .ravesh-menu .option i {
+            font-size: 16px;
+            color: gray;
+            width: 20px;
+            text-align: center;
+            text-decoration: none;
+            min-height: 10px;
+        }
+
+[dir=rtl] .ravesh-menu .option i {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+[dir=rtl] .ravesh-menu .option span {
+    margin-left: 30px;
+}
+
+[dir=ltr] .ravesh-menu .option span {
+    margin-right: 30px;
+}
+
+[dir=ltr] .ravesh-menu .option i {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.ravesh-menu .line {
+    border-bottom: solid 1px #ddd;
+}
+
+
+/*-text editor------------------------------------*/
+
+.ravesh-editor {
+    display: inline-block;
+    border: solid 1px #e1e1e1;
+    min-width: 200px;
+    background: white;
+    position: relative;
+    width: inherit;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+    .ravesh-editor.active {
+        border: solid 1px #03A9F4;
+    }
+
+    .ravesh-editor .ravesh-editor-toolbar {
+        overflow: hidden;
+        box-shadow: 0 0px 5px 0px rgba(0,0,0,0.5);
+    }
+
+        .ravesh-editor .ravesh-editor-toolbar .split {
+            height: 26px;
+            text-align: center;
+            line-height: 36px;
+            border-right: solid 1px #d8d8d8;
+            margin: 5px;
+        }
+
+        .ravesh-editor .ravesh-editor-toolbar .item {
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin: 0;
+        }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.active,
+            .ravesh-editor:not(.disabled) .ravesh-editor-toolbar .item:hover:not(.disable) {
+                background: #f1f1f1;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item div {
+                background: url('../../../Pages/FormBuilder/images/editor-icons.png') no-repeat;
+                background-size: 48px 60px;
+                width: 12px;
+                height: 12px;
+                margin: 12px;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.disable {
+                opacity: 0.3;
+                cursor: default;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.bold div {
+                background-position: 0 0;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.italic div {
+                background-position: -12px 0;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.justifyleft div {
+                background-position: -24px 0;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.justifyright div {
+                background-position: -36px 0;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.justifycenter div {
+                background-position: 0 -12px;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.strikethrough div {
+                background-position: -12px -12px;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.emoticon div {
+                background-position: -24px -12px;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.color div {
+                background-position: -36px -12px;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.undo div {
+                background-position: 0 -24px;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.redo div {
+                background-position: -12px -24px;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.underline div {
+                background-position: -24px -24px;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.fontsize div {
+                background-position: -36px -24px;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.table div {
+                background-position: 0 -36px;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.link div {
+                background-position: -12px -36px;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.image div {
+                background-position: -24px -36px;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.html div {
+                background-position: -36px -36px;
+            }
+
+            .ravesh-editor .ravesh-editor-toolbar .item.full div {
+                background-position: 0 -48px;
+            }
+
+    .ravesh-editor.full-screen .ravesh-editor-toolbar .item.full div {
+        background-position: -12px -48px;
+    }
+
+[dir=rtl] .ravesh-editor .ravesh-editor-toolbar .split,
+[dir=rtl] .ravesh-editor .ravesh-editor-toolbar .item {
+    float: right;
+}
+
+[dir=ltr] .ravesh-editor .ravesh-editor-toolbar .split,
+[dir=ltr] .ravesh-editor .ravesh-editor-toolbar .item {
+    float: left;
+}
+
+.ravesh-editor.disabled .ravesh-editor-toolbar .item {
+    opacity: 0.3;
+    cursor: default;
+    outline: none;
+}
+
+.ravesh-editor-subtoolbar {
+    border-top: solid 1px #e1e1e1;
+}
+
+    .ravesh-editor-subtoolbar .custom-icon {
+        height: 36px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin: 0;
+        display: inline-block;
+        line-height: 36px;
+        text-align: center;
+        padding: 0 5px;
+        font-size: 8pt;
+    }
+
+        .ravesh-editor-subtoolbar .custom-icon i {
+            font-size: 15px;
+        }
+
+        .ravesh-editor-subtoolbar .custom-icon span {
+            position: relative;
+            top: -2px;
+        }
+
+[dir=rtl] .ravesh-editor-subtoolbar .custom-icon span {
+    padding-right: 8px;
+}
+
+[dir=ltr] .ravesh-editor-subtoolbar .custom-icon span {
+    padding-left: 8px;
+}
+
+.ravesh-editor.html-editor .ravesh-editor-subtoolbar .custom-icon {
+    opacity: 0.3;
+    cursor: default;
+    outline: none;
+}
+
+.ravesh-editor-subtoolbar .custom-icon.active,
+.ravesh-editor:not(.disabled) .ravesh-editor-subtoolbar .custom-icon:hover:not(.disable) {
+    background: #f1f1f1;
+}
+
+.ravesh-editor .ravesh-editor-content-html {
+    outline: none;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 5px 7px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    border: none;
+    direction: ltr;
+    text-align: left;
+    margin-top: 5px;
+    display: none;
+}
+
+.ravesh-editor.html-editor .ravesh-editor-content-html {
+    display: block;
+}
+
+.ravesh-editor.html-editor .ravesh-editor-content {
+    display: none;
+}
+
+.ravesh-editor.disabled .ravesh-editor-content {
+    cursor: default;
+}
+
+.ravesh-editor.full-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    z-index: 9999;
+}
+
+    .ravesh-editor.full-screen .ravesh-editor-content-html,
+    .ravesh-editor.full-screen .ravesh-editor-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 80px;
+        max-height: none;
+    }
+
+.ravesh-editor .ravesh-editor-content {
+    outline: none;
+    line-height: 1.5;
+    padding: 5px 7px;
+    color: #222;
+    max-height: 500px;
+    overflow: auto;
+    cursor: text;
+    margin-top: 5px;
+}
+
+    .ravesh-editor .ravesh-editor-content iframe {
+        background: #ddd;
+    }
+
+.ravesh-editor-menu .menu-emoticon {
+    width: 150px;
+    box-sizing: content-box;
+}
+
+    .ravesh-editor-menu .menu-emoticon span {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        font-size: 18px;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+        .ravesh-editor-menu .menu-emoticon span:hover {
+            background: #f1f1f1;
+        }
+
+.ravesh-editor-menu .menu-color {
+    width: 150px;
+    box-sizing: content-box;
+}
+
+    .ravesh-editor-menu .menu-color span {
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        margin: 3px;
+        box-sizing: border-box;
+    }
+
+        .ravesh-editor-menu .menu-color span:hover {
+            border: solid 2px black;
+        }
+
+    .ravesh-editor-menu .menu-color .color-button {
+        width: 50%;
+        float: right;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+        margin-bottom: 2px;
+        background: #f1f1f1;
+        color: #999;
+        transition: all 300ms;
+    }
+
+        .ravesh-editor-menu .menu-color .color-button.active,
+        .ravesh-editor-menu .menu-color .color-button:hover {
+            background: #fff;
+            color: #000;
+            font-weight: bold;
+        }
+
+.ravesh-editor-menu .menu-fontsize {
+    text-align: center;
+}
+
+    .ravesh-editor-menu .menu-fontsize div:hover {
+        background: #f1f1f1;
+    }
+
+    .ravesh-editor-menu .menu-fontsize div {
+        cursor: pointer;
+    }
+
+.ravesh-editor-menu .menu-table {
+    width: 181px;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+    .ravesh-editor-menu .menu-table .size-hint {
+        direction: ltr;
+        font-size: 12px;
+        text-align: center;
+        line-height: 23px;
+    }
+
+    .ravesh-editor-menu .menu-table .square {
+        width: 18px;
+        height: 18px;
+        float: left;
+        cursor: pointer;
+    }
+
+        .ravesh-editor-menu .menu-table .square:after {
+            content: '';
+            border: solid 1px #ccc;
+            width: 15px;
+            height: 15px;
+            display: block;
+        }
+
+        .ravesh-editor-menu .menu-table .square.hover:after {
+            border-color: #03a9f4;
+        }
+
+.menu-fields-selector {
+    min-width: 200px;
+    max-width: 300px;
+    max-height: 350px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+    .menu-fields-selector .selector-head {
+        background: #eee;
+        padding: 10px 10px;
+        cursor: default;
+    }
+
+    .menu-fields-selector .selector-row,
+    .menu-fields-selector .selector-row-section {
+        padding: 7px 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+        .menu-fields-selector .selector-row,
+        .menu-fields-selector .selector-row-section.allow {
+            cursor: pointer;
+        }
+
+    .menu-fields-selector .selector-row-section {
+        font-weight: bold;
+    }
+
+        .menu-fields-selector .selector-row:hover,
+        .menu-fields-selector .selector-row-section.allow:hover {
+            background: #03A9F4;
+            color: #fff;
+        }
+
+/*-date picker------------------------------------*/
+.ravesh-date-picker {
+    background: #fff;
+    padding: 6px;
+}
+
+    .ravesh-date-picker .ui-datepicker-header {
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 13px;
+        padding: 0 0 6px;
+        background: white;
+        border: none;
+        box-sizing: content-box;
+        width: 100%;
+    }
+
+        .ravesh-date-picker .ui-datepicker-header .ui-datepicker-title {
+            margin: 0 40px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+            .ravesh-date-picker .ui-datepicker-header .ui-datepicker-title:not(.disable):hover {
+                background: #eaeaea;
+            }
+
+            .ravesh-date-picker .ui-datepicker-header .ui-datepicker-title.disable {
+                cursor: default;
+                color: #999;
+                user-select: none;
+            }
+
+
+        .ravesh-date-picker .ui-datepicker-header .ui-datepicker-prev,
+        .ravesh-date-picker .ui-datepicker-header .ui-datepicker-next {
+            width: 30px;
+            height: 30px;
+            display: block;
+            cursor: pointer;
+            border-radius: 50% !important;
+            transition: background 0.3s;
+        }
+
+            .ravesh-date-picker .ui-datepicker-header .ui-datepicker-prev:hover,
+            .ravesh-date-picker .ui-datepicker-header .ui-datepicker-next:hover {
+                background: #eaeaea;
+            }
+
+        .ravesh-date-picker .ui-datepicker-header .ui-datepicker-prev {
+            float: right;
+        }
+
+        .ravesh-date-picker .ui-datepicker-header .ui-datepicker-next {
+            float: left;
+        }
+
+            .ravesh-date-picker .ui-datepicker-header .ui-datepicker-prev .ui-icon,
+            .ravesh-date-picker .ui-datepicker-header .ui-datepicker-next .ui-icon {
+                background: url('../../../pages/FormBuilder/images/DatePicker-icon.png') no-repeat;
+                background-size: 24px 12px;
+                width: 12px;
+                height: 12px;
+                display: block;
+                margin: 9px;
+                padding: 0;
+                position: unset;
+            }
+
+        .ravesh-date-picker .ui-datepicker-header .ui-datepicker-prev .ui-icon {
+            background-position: -12px 0;
+        }
+
+
+            .ravesh-date-picker .ui-datepicker-header .ui-datepicker-prev .ui-icon:before,
+            .ravesh-date-picker .ui-datepicker-header .ui-datepicker-next .ui-icon:before {
+                content: '';
+            }
+
+    .ravesh-date-picker .ui-widget {
+        background: white;
+        font-family: 'IRANSansWeb',Tahoma;
+        border: none;
+        color: #444;
+        font-size: 12px;
+        width: auto;
+    }
+
+    .ravesh-date-picker .ui-datepicker-calendar {
+        width: 100%;
+        text-align: center;
+        font-size: 11px;
+        border-collapse: collapse;
+    }
+
+        .ravesh-date-picker .ui-datepicker-calendar thead tr {
+            background: #f5f5f5;
+        }
+
+            .ravesh-date-picker .ui-datepicker-calendar thead tr th {
+                padding: 10px 6px;
+            }
+
+        .ravesh-date-picker .ui-datepicker-calendar .ui-state-default {
+            text-decoration: none;
+            color: #666;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            display: inline-block;
+            margin: 3px;
+            border-radius: 50%;
+            transition: background 0.3s, color 0.3s;
+            padding: 0;
+        }
+
+            .ravesh-date-picker .ui-datepicker-calendar .ui-state-default.ui-state-active {
+                background-color: #03A9F4 !important;
+                color: #fff !important;
+                box-shadow: none;
+            }
+
+            .ravesh-date-picker .ui-datepicker-calendar .ui-state-default:hover,
+            .ravesh-date-picker .ui-datepicker-calendar .ui-state-default.ui-state-highlight {
+                background: #eaeaea;
+                color: #000;
+            }
+
+        .ravesh-date-picker .ui-datepicker-calendar .holidayCalendar .ui-state-default {
+            color: #DD4B39;
+        }
+
+    .ravesh-date-picker .ravesh-date-picker-month .month {
+        width: 33%;
+        font-size: 13px;
+        text-align: center;
+        cursor: pointer;
+        margin: 5px 0;
+    }
+
+        .ravesh-date-picker .ravesh-date-picker-month .month span {
+            transition: background 0.3s;
+            margin: 0 5px;
+            display: block;
+            padding: 5px;
+            border-radius: 50px;
+        }
+
+        .ravesh-date-picker .ravesh-date-picker-month .month.current span,
+        .ravesh-date-picker .ravesh-date-picker-month .month:hover span {
+            background: #eaeaea;
+        }
+
+        .ravesh-date-picker .ravesh-date-picker-month .month.active span {
+            background: #03A9F4;
+            color: #fff;
+        }
+
+
+    .ravesh-date-picker .ravesh-date-picker-year .year {
+        width: 33%;
+        font-size: 13px;
+        text-align: center;
+        cursor: pointer;
+        margin: 5px 0;
+        float: left;
+    }
+
+        .ravesh-date-picker .ravesh-date-picker-year .year span {
+            transition: background 0.3s;
+            margin: 0 5px;
+            display: block;
+            padding: 5px;
+            border-radius: 50px;
+        }
+
+        .ravesh-date-picker .ravesh-date-picker-year .year.current span,
+        .ravesh-date-picker .ravesh-date-picker-year .year:hover span {
+            background: #eaeaea;
+        }
+
+        .ravesh-date-picker .ravesh-date-picker-year .year.active span {
+            background: #03A9F4;
+            color: #fff;
+        }
+
+/*-spinner------------------------------------*/
+.spinner2 {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: solid 2px;
+    border-radius: 100%;
+    animation: spinner2 1s infinite linear;
+    border-color: rgba(0, 0, 0, .1);
+    border-top-color: rgb(0, 0, 0);
+}
+
+    .spinner2.small {
+        width: 16px;
+        height: 16px;
+    }
+
+    .spinner2.large {
+        width: 48px;
+        height: 48px;
+    }
+
+@keyframes spinner2 {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.rvc-comingIn {
+    -webkit-animation: rvc-comingIn 0.2s ease;
+    animation: rvc-comingIn 0.2s ease;
+}
+
+@-webkit-keyframes rvc-comingIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px) perspective( 600px ) rotateX( 10deg );
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0) perspective( 600px ) rotateX( 0 );
+    }
+}
+
+@keyframes rvc-comingIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px) perspective( 600px ) rotateX( 10deg );
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0) perspective( 600px ) rotateX( 0 );
+    }
+}
+
+.form-field-attachment .ravesh-file-upload {
+    background: white;
+    border: solid 1px #e1e1e1;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    padding: 0 7px 7px;
+    padding-bottom: 7px;
+    height: auto;
+}
+
+    .form-field-attachment .ravesh-file-upload div {
+        background: url(../FormBuilder/images/icon-upload.png) 0px 0px no-repeat;
+        background-size: 35px 35px;
+        width: 35px;
+        height: 35px;
+        margin: 5px auto;
+        opacity: 0.3;
+    }
+
+    .form-field-attachment .ravesh-file-upload img {
+        width: 100%;
+        max-width: 600px;
+        margin: 7px auto;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-user-drag: none;
+        user-drag: none;
+        -webkit-touch-callout: none;
+        display: block;
+    }
+
+    .form-field-attachment .ravesh-file-upload .ravesh-button {
+        display: inline-block;
+        margin: 7px 0 0 0 !important;
+    }
+
+    .form-field-attachment .ravesh-file-upload .drag-here {
+        color: inherit;
+    }
+
+    .form-field-attachment .ravesh-file-upload a {
+        text-decoration: underline;
+        color: inherit;
+    }
+
+    .form-field-attachment .ravesh-file-upload:not(.disabled).active div {
+        opacity: 0.9;
+        transform: scale(1.1);
+    }
+
+    .form-field-attachment .ravesh-file-upload:not(.disabled).active {
+        border-color: #03A9F4;
+        background: #fbfbfb;
+    }
+
+    .form-field-attachment .ravesh-file-upload.disabled {
+        background: #f1f1f1;
+        border: solid 1px #ccc;
+    }
+
+        .form-field-attachment .ravesh-file-upload.disabled a {
+            color: #aaa;
+            cursor: default;
+            text-decoration: none;
+        }
+
+        .form-field-attachment .ravesh-file-upload.disabled .drag-here {
+            display: none;
+        }
+
+.form-field-checkbox .item {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-field-checkbox .style-0 {
+}
+
+.form-field-checkbox .style-1 .item {
+    width: 100%;
+}
+
+.form-field-checkbox .style-2 .item {
+    width: 50%;
+}
+
+.form-field-checkbox .style-3 .item {
+    width: 33.3%;
+}
+
+.form-field-checkbox .style-4 .item {
+    width: 25%;
+}
+
+.form-design-field.form-field-dependList .content-cover {
+    padding: 0;
+}
+
+.insert-mode .form-design-field.form-field-dependList .content {
+    padding: 0;
+}
+
+[dir=rtl] .form-design-field.form-field-dependList .icons {
+    margin: 7px 0 0 10px;
+}
+
+[dir=ltr] .form-design-field.form-field-dependList .icons {
+    margin: 7px 10px 0 0;
+}
+
+.form-field-dependList select {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    padding: 7px 5px;
+    font-size: 11px;
+    box-sizing: border-box;
+    max-width: 100% !important;
+    height: 35px;
+}
+
+    .form-field-dependList select:disabled {
+        background: #f1f1f1;
+        border: solid 1px #ccc;
+    }
+
+.form-field-dependList .style-1 > div,
+.form-field-dependList .style-2 > div,
+.form-field-dependList .style-3 > div,
+.form-field-dependList .style-4 > div {
+    margin: 6px 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-field-dependList .style-1 > div {
+    width: 100%;
+}
+
+.form-field-dependList .style-2 > div {
+    width: 50%;
+}
+
+.form-field-dependList .style-3 > div {
+    width: 33.3%;
+}
+
+.form-field-dependList .style-4 > div {
+    width: 25%;
+}
+
+
+.form-field-dependList .content-cover2 {
+    padding: 10px;
+}
+
+.insert-mode .form-field-dependList .content-cover2 {
+    padding: 5px;
+}
+
+.form-field-dependList .title2 {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+    .form-field-dependList .title2 .title-str {
+        display: inline-block;
+    }
+
+.titles-top .form-field-dependList .title2 .title-str {
+    margin-bottom: 4px;
+}
+
+[dir=rtl].titles-left .form-field-dependList .title2 .title-str,
+[dir=rtl].titles-right .form-field-dependList .title2 .title-str {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+[dir=rtl].titles-left .form-field-dependList .title2,
+[dir=rtl].titles-right .form-field-dependList .title2 {
+    float: right;
+    width: 25%;
+}
+
+[dir=rtl].titles-left .form-design-field .wrapper2,
+[dir=rtl].titles-right .form-design-field .wrapper2 {
+    float: left;
+    width: 75%;
+    overflow: hidden;
+}
+
+[dir=rtl].titles-left .form-field-dependList .title2 {
+    text-align: left;
+}
+
+
+[dir=ltr].titles-left .form-field-dependList .title2 .title-str,
+[dir=ltr].titles-right .form-field-dependList .title2 .title-str {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+[dir=ltr].titles-left .form-field-dependList .title2,
+[dir=ltr].titles-right .form-field-dependList .title2 {
+    float: left;
+    width: 25%;
+}
+
+[dir=ltr].titles-left .form-design-field .wrapper2,
+[dir=ltr].titles-right .form-design-field .wrapper2 {
+    float: right;
+    width: 75%;
+    overflow: hidden;
+}
+
+[dir=ltr].titles-right .form-field-dependList .title2 {
+    text-align: right;
+}
+
+.form-field-map .map-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.3);
+    display: none;
+}
+
+.form-field-map .disabled .map-overlay {
+    display: block;
+}
+
+.ravesh-map-search-icon {
+    background: white;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    margin: 8px;
+    z-index: 1 !important;
+}
+
+    .ravesh-map-search-icon:hover {
+        box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4px -1px;
+    }
+
+    .ravesh-map-search-icon.expand input {
+        width: 220px;
+    }
+
+    .ravesh-map-search-icon input {
+        width: 0px;
+        line-height: 50px;
+        border: none;
+        background: transparent;
+        transition: width 0.3s ease-out;
+    }
+
+    .ravesh-map-search-icon div {
+        content: '';
+        background: url(../FormBuilder/images/icon-search.png) 0px 0px no-repeat;
+        background-size: 24px 24px;
+        background-position: center;
+        width: 50px;
+        height: 50px;
+        display: block;
+        opacity: 0.9;
+        float: right;
+    }
+
+
+.pac-container {
+    direction: ltr;
+    width: 270px !important;
+    z-index: 10000;
+}
+
+.form-field-matrix > div {
+    overflow-x: auto;
+}
+
+.form-field-matrix table {
+    width: 100%;
+}
+
+    .form-field-matrix table td {
+        border: none;
+        padding: 10px;
+        text-align: center;
+        font-size: 11px;
+        vertical-align: middle;
+        transition: background 0.3s;
+    }
+
+    .form-field-matrix table.border td {
+        border: solid 1px #eaeaea;
+    }
+
+
+    .form-field-matrix table tr:hover td,
+    .form-field-matrix table td.hover {
+        background: #fbfbfb;
+    }
+
+[dir=rtl] .form-field-matrix table td.row-title {
+    text-align: right;
+}
+
+[dir=ltr] .form-field-matrix table td.row-title {
+    text-align: left;
+}
+
+.form-field-matrix table tr.error td {
+    background: #fff7f6;
+}
+
+.form-field-picture .item-cover {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    user-select: none;
+}
+
+.form-field-picture .item {
+    box-sizing: border-box;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+    .form-field-picture .item label {
+        display: block;
+        box-sizing: border-box;
+        padding: 5px;
+    }
+
+.form-field-picture .enabled .item:hover label {
+    box-shadow: 0 3px 10px 2px rgba(0,0,0,0.15);
+}
+
+.form-field-picture .item label img {
+    width: 100%;
+    display: block;
+}
+
+.form-field-picture .enabled .item label img {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+    .form-field-picture .enabled .item label img:hover {
+        opacity: 1;
+    }
+
+.form-field-picture .disabled .item label img {
+    opacity: 0.5;
+}
+
+.form-field-picture .item input {
+    position: absolute;
+    opacity: 0;
+}
+
+.form-field-picture .item span {
+    padding: 5px;
+    display: block;
+    font-size: 11px;
+    color: #444;
+    line-height: 1.7;
+}
+
+.form-field-picture .enabled .item input:focus + label {
+    border: solid 2px #03a9f4;
+}
+
+.form-field-picture .enabled .item input:active + label {
+    border: solid 2px #03a9f4;
+}
+
+
+.form-field-picture .item .check {
+    background: url(../FormBuilder/images/image-checkbox.png);
+    background-size: 15px 30px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.form-field-picture .item:hover .check {
+    display: block;
+}
+
+.form-field-picture .item.checked .check {
+    display: block;
+    background-position: 0 -15px;
+}
+
+
+[dir=rtl] .form-field-picture .item-cover {
+    padding: 0 0 10px 10px;
+}
+
+[dir=ltr] .form-field-picture .item-cover {
+    padding: 0 10px 10px 0;
+}
+
+.form-field-picture .style-0 {
+}
+
+.form-field-picture .style-1 .item-cover {
+    width: 100%;
+}
+
+.form-field-picture .style-2 .item-cover {
+    width: 50%;
+}
+
+.form-field-picture .style-3 .item-cover {
+    width: 33.3%;
+}
+
+.form-field-picture .style-4 .item-cover {
+    width: 25%;
+}
+
+
+.form-field-picture .disabled .item .check {
+    display: none;
+}
+
+.form-field-radio .item {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-field-radio .style-0 {
+}
+
+.form-field-radio .style-1 .item {
+    width: 100%;
+}
+
+.form-field-radio .style-2 .item {
+    width: 50%;
+}
+
+.form-field-radio .style-3 .item {
+    width: 33.3%;
+}
+
+.form-field-radio .style-4 .item {
+    width: 25%;
+}
+
+﻿.form-field-rangeslider .ravesh-input-range {
+    position: relative;
+    max-width: 100%;
+}
+
+.form-field-rangeslider .ravesh-input-range div {
+    height: 11px;
+    line-height: 11px;
+    font-size: 11px;
+    padding: 0 7px 5px 7px;
+}
+
+.form-field-rangeslider .ravesh-input-range.disabled div {
+    color: #aaa;
+}
+
+[dir=rtl] .form-field-rangeslider .ravesh-input-range div {
+    text-align: left;
+}
+
+[dir=ltr] .form-field-rangeslider .ravesh-input-range div {
+    text-align: right;
+}
+
+.form-field-rangeslider input[type=range] {
+    -webkit-appearance: none;
+    height: 13px;
+    border-radius: 5px;
+    background: #ddd;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin: 0 0 6px;
+    width: 100%;
+    outline: none;
+}
+
+.form-field-rangeslider .disabled input[type=range] {
+    background: #eee;
+}
+
+.form-field-rangeslider input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    border: solid 1px #aaa;
+    box-sizing: border-box;
+}
+
+.form-field-rangeslider .disabled input[type=range]::-webkit-slider-thumb {
+    background: #fafafa;
+    border: solid 1px #d1d1d1;
+    cursor: default;
+}
+
+
+.form-field-rangeslider input[type=range]:focus::-webkit-slider-thumb {
+    background: #03A9F4;
+    border-color: #03A9F4;
+}
+
+.form-field-rangeslider input[type=range]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: solid 1px #aaa;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.form-field-rangeslider .disabled input[type=range]::-moz-range-thumb {
+    background: #fafafa;
+    border: solid 1px #d1d1d1;
+    cursor: default;
+}
+
+.form-field-rangeslider input[type=range]:focus::-moz-range-thumb {
+    background: #03A9F4;
+    border-color: #03A9F4;
+}
+
+.form-field-rating .ravesh-rating .cancel {
+    cursor: pointer;
+    background: url('../FormBuilder/images/rating-cancel.png') 0px 0px no-repeat;
+    background-size: 25px 50px;
+    width: 25px;
+    height: 25px;
+}
+
+.form-field-rating .ravesh-rating:not(.disabled) .cancel:hover {
+    background-position: 0px -25px;
+}
+
+.form-field-rating .ravesh-rating.disabled .cancel:hover {
+    cursor: default;
+}
+
+.form-field-rating .ravesh-rating .rate {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    padding: 0 1px;
+    border: none !important;
+}
+
+    .form-field-rating .ravesh-rating .rate.on {
+        background-position: 0px -25px !important;
+    }
+
+    .form-field-rating .ravesh-rating .rate.hover {
+        background-position: 0px -50px !important;
+    }
+
+.form-field-rating .ravesh-rating.disabled .rate {
+    cursor: default;
+    opacity: 0.4;
+}
+
+
+.form-field-rating .ravesh-rating.style-0 .rate {
+    background: url('../FormBuilder/images/rating-star.png') 0px 0px no-repeat;
+    background-size: 25px 75px;
+}
+
+
+.form-field-rating .ravesh-rating.style-1 .rate {
+    background: url('../FormBuilder/images/rating-heart.png') 0px 0px no-repeat;
+    background-size: 25px 75px;
+}
+
+
+.form-field-rating .ravesh-rating.style-2 .rate {
+    background: url('../FormBuilder/images/rating-adult.png') 0px 0px no-repeat;
+    background-size: 24px 135px;
+}
+
+.form-field-rating .ravesh-rating.style-2 .rate {
+    width: 24px;
+    height: 45px;
+}
+
+    .form-field-rating .ravesh-rating.style-2 .rate.on {
+        background-position: 0px -45px !important;
+    }
+
+    .form-field-rating .ravesh-rating.style-2 .rate.hover {
+        background-position: 0px -90px !important;
+    }
+
+
+.form-field-rating .ravesh-rating.style-3 .rate {
+    background: url('../FormBuilder/images/rating-children.png') 0px 0px no-repeat;
+    background-size: 25px 75px;
+}
+
+.form-field-rating .ravesh-rating.style-3 .rate {
+    width: 24px;
+}
+
+.form-field-signature .ravesh-signature-main-overlay {
+    position: fixed;
+    background: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+
+.form-field-signature .ravesh-signature-maximum .ravesh-signature-main-overlay {
+    display: block;
+}
+
+.form-field-signature .ravesh-signature-maximum .ravesh-signature {
+    z-index: 2;
+    position: fixed;
+}
+
+.form-field-signature .ravesh-signature {
+    display: inline-block;
+    border: solid 1px #e1e1e1;
+    position: relative;
+    line-height: 1px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+    .form-field-signature .ravesh-signature.disabled {
+        border: solid 1px #ccc;
+    }
+
+    .form-field-signature .ravesh-signature .ravesh-signature-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ccc;
+        opacity: 0.3;
+        cursor: default;
+        z-index: 3;
+        display: none;
+    }
+
+    .form-field-signature .ravesh-signature.disabled .ravesh-signature-overlay {
+        display: block;
+    }
+
+    .form-field-signature .ravesh-signature .signature-icon {
+        background: url(../FormBuilder/images/signature-icon.png) 0px 0px no-repeat;
+        background-size: 75px 50px;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        padding: 0 1px;
+        position: absolute;
+        z-index: 2;
+    }
+
+        .form-field-signature .ravesh-signature .signature-icon.s-clear {
+            background-position: 0 0;
+            bottom: 8px;
+            right: 20px;
+        }
+
+        .form-field-signature .ravesh-signature .signature-icon.s-minimum {
+            background-position: -25px 0;
+            top: 5px;
+            right: 5px;
+        }
+
+        .form-field-signature .ravesh-signature .signature-icon.s-maximum {
+            background-position: -50px 0;
+            top: 5px;
+            right: 5px;
+        }
+
+        .form-field-signature .ravesh-signature .signature-icon.s-clear:hover {
+            background-position: 0px -25px;
+        }
+
+        .form-field-signature .ravesh-signature .signature-icon.s-minimum:hover {
+            background-position: -25px -25px;
+        }
+
+        .form-field-signature .ravesh-signature .signature-icon.s-maximum:hover {
+            background-position: -50px -25px;
+        }
+
+    .form-field-signature .ravesh-signature .ravesh-signature-value-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #ccc;
+        opacity: 0.1;
+        cursor: default;
+    }
+
+.ravesh-smiley-rating.style-0 .face {
+    cursor: pointer;
+    background: url('../FormBuilder/images/smiley-rate.png') 0px 0px no-repeat;
+    background-size: 125px 50px;
+    width: 25px;
+    height: 25px;
+    margin: 0 1.5px;
+}
+
+    .ravesh-smiley-rating.style-0 .face.disable {
+        opacity: 0.5;
+        cursor:default;
+    }
+
+.ravesh-smiley-rating.style-0 .face-1 {
+    background-position: -100px 0;
+}
+
+.ravesh-smiley-rating.style-0 .face-2 {
+    background-position: -75px 0;
+}
+
+.ravesh-smiley-rating.style-0 .face-3 {
+    background-position: -50px 0;
+}
+
+.ravesh-smiley-rating.style-0 .face-4 {
+    background-position: -25px 0;
+}
+
+.ravesh-smiley-rating.style-0 .face-5 {
+    background-position: 0 0;
+}
+
+.ravesh-smiley-rating.style-0 .face-1.active,
+.ravesh-smiley-rating.style-0 .face-1:not(.disable):hover {
+    background-position: -100px -25px;
+}
+
+.ravesh-smiley-rating.style-0 .face-2.active,
+.ravesh-smiley-rating.style-0 .face-2:not(.disable):hover {
+    background-position: -75px -25px;
+}
+
+.ravesh-smiley-rating.style-0 .face-3.active,
+.ravesh-smiley-rating.style-0 .face-3:not(.disable):hover {
+    background-position: -50px -25px;
+}
+
+.ravesh-smiley-rating.style-0 .face-4.active,
+.ravesh-smiley-rating.style-0 .face-4:not(.disable):hover {
+    background-position: -25px -25px;
+}
+
+.ravesh-smiley-rating.style-0 .face-5.active,
+.ravesh-smiley-rating.style-0 .face-5:not(.disable):hover {
+    background-position: 0 -25px;
+}
+
+.ravesh-smiley-rating.style-0 .text {
+    padding: 5px 1.5px;
+    font-size: 12px;
+    height: 10px;
+    color: #666;
+}
+
+
+.ravesh-smiley-rating.style-1 .face {
+    cursor: pointer;
+    background: url('../FormBuilder/images/smiley-rate.png') 0px 0px no-repeat;
+    background-size: 250px 100px;
+    width: 50px;
+    height: 50px;
+    margin: 0 3px;
+}
+
+    .ravesh-smiley-rating.style-1 .face.disable {
+        opacity: 0.5;
+        cursor:default;
+    }
+
+.ravesh-smiley-rating.style-1 .face-1 {
+    background-position: -200px 0;
+}
+
+.ravesh-smiley-rating.style-1 .face-2 {
+    background-position: -150px 0;
+}
+
+.ravesh-smiley-rating.style-1 .face-3 {
+    background-position: -100px 0;
+}
+
+.ravesh-smiley-rating.style-1 .face-4 {
+    background-position: -50px 0;
+}
+
+.ravesh-smiley-rating.style-1 .face-5 {
+    background-position: 0 0;
+}
+
+.ravesh-smiley-rating.style-1 .face-1.active,
+.ravesh-smiley-rating.style-1 .face-1:not(.disable):hover {
+    background-position: -200px -50px;
+}
+
+.ravesh-smiley-rating.style-1 .face-2.active,
+.ravesh-smiley-rating.style-1 .face-2:not(.disable):hover {
+    background-position: -150px -50px;
+}
+
+.ravesh-smiley-rating.style-1 .face-3.active,
+.ravesh-smiley-rating.style-1 .face-3:not(.disable):hover {
+    background-position: -100px -50px;
+}
+
+.ravesh-smiley-rating.style-1 .face-4.active,
+.ravesh-smiley-rating.style-1 .face-4:not(.disable):hover {
+    background-position: -50px -50px;
+}
+
+.ravesh-smiley-rating.style-1 .face-5.active,
+.ravesh-smiley-rating.style-1 .face-5:not(.disable):hover {
+    background-position: 0 -50px;
+}
+
+.ravesh-smiley-rating.style-1 .text {
+    padding: 7px 3px 5px;
+    font-size: 12px;
+    height: 10px;
+    color: #666;
+}
+
+.form-field-telephone .ravesh-telephone.hasAreaCode {
+    padding-left: 60px;
+    overflow:hidden;
+}
+
+.form-field-telephone .ravesh-tel-input {
+    width: 100%;
+    float: right;
+}
+
+.form-field-telephone .ravesh-pretel-input {
+    float: left;
+    width: 50px;
+    margin-left: -60px;
+}
+
+.form-field-telephone .ravesh-telephone.hasAreaCode .ravesh-tel-input {
+    direction: ltr;
+    text-align: left;
+}
+
+
+.form-field-toggle .ravesh-toggle {
+    user-select: none;
+}
+
+    .form-field-toggle .ravesh-toggle.disabled {
+        opacity: 0.3;
+        cursor: default;
+    }
+
+    .form-field-toggle .ravesh-toggle input {
+        opacity: 0;
+        position: absolute;
+        top: -100px;
+    }
+
+
+.form-field-toggle .ravesh-toggle-style-0 {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 31px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 1px 0 2px;
+}
+
+    .form-field-toggle .ravesh-toggle-style-0 .slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: solid 1px #e6e6e6;
+        background-color: #e6e6e6;
+        border-radius: 20px;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+        .form-field-toggle .ravesh-toggle-style-0 .slider:before {
+            position: absolute;
+            content: "";
+            height: 25px;
+            width: 25px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            -webkit-transition: .3s;
+            transition: .3s;
+            box-sizing: border-box;
+            border-radius: 50%;
+        }
+
+    .form-field-toggle .ravesh-toggle-style-0 input:checked + .slider {
+        background-color: #03A9F4;
+        border: solid 1px #03A9F4;
+    }
+
+    .form-field-toggle .ravesh-toggle-style-0 input:focus + .slider {
+        border: solid 1px #03A9F4;
+    }
+
+    .form-field-toggle .ravesh-toggle-style-0 input:checked + .slider:before {
+        -webkit-transform: translateX(19px);
+        transform: translateX(19px);
+    }
+
+
+
+
+.form-field-toggle .ravesh-toggle-style-1 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    background: #e6e6e6;
+    box-sizing: border-box;
+    font-size: 11px;
+    max-width: 100% !important;
+    height: 35px;
+    border-radius: 5px;
+}
+
+    .form-field-toggle .ravesh-toggle-style-1 .toggle-on,
+    .form-field-toggle .ravesh-toggle-style-1 .toggle-off {
+        line-height: 35px;
+        height: 35px;
+        box-sizing: border-box;
+        transition: all 0.4s;
+    }
+
+    .form-field-toggle .ravesh-toggle-style-1.has-text .toggle-on,
+    .form-field-toggle .ravesh-toggle-style-1.has-text .toggle-off {
+        min-width: 60px;
+    }
+
+
+    .form-field-toggle .ravesh-toggle-style-1 .toggle-off,
+    .form-field-toggle .ravesh-toggle-style-1.checked .toggle-on {
+        background: #03a9f4;
+        color: #fff;
+    }
+
+    .form-field-toggle .ravesh-toggle-style-1 .toggle-on,
+    .form-field-toggle .ravesh-toggle-style-1.checked .toggle-off {
+        background: unset;
+        color: #999;
+    }
+
+        .form-field-toggle .ravesh-toggle-style-1 .toggle-on i,
+        .form-field-toggle .ravesh-toggle-style-1 .toggle-off i {
+            background: url('../FormBuilder/images/toggle-icon.png') 0px 0px no-repeat;
+            background-size: 80px 100px;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            top: 7px;
+            position: relative;
+            margin: 0 5px;
+        }
+        
+.form-field-toggle .ravesh-toggle-style-1.checked .toggle-on.ticon-1 i{background-position:0 0}
+.form-field-toggle .ravesh-toggle-style-1 .toggle-on.ticon-1 i{background-position:-20px 0}
+.form-field-toggle .ravesh-toggle-style-1 .toggle-off.ticon-1 i{background-position:-40px 0}
+.form-field-toggle .ravesh-toggle-style-1.checked .toggle-off.ticon-1 i{background-position:-60px 0}
+.form-field-toggle .ravesh-toggle-style-1.checked .toggle-on.ticon-2 i{background-position:0 -20px}
+.form-field-toggle .ravesh-toggle-style-1 .toggle-on.ticon-2 i{background-position:-20px -20px}
+.form-field-toggle .ravesh-toggle-style-1 .toggle-off.ticon-2 i{background-position:-40px -20px}
+.form-field-toggle .ravesh-toggle-style-1.checked .toggle-off.ticon-2 i{background-position:-60px -20px}
+.form-field-toggle .ravesh-toggle-style-1.checked .toggle-on.ticon-3 i{background-position:0 -40px}
+.form-field-toggle .ravesh-toggle-style-1 .toggle-on.ticon-3 i{background-position:-20px -40px}
+.form-field-toggle .ravesh-toggle-style-1 .toggle-off.ticon-3 i{background-position:-40px -40px}
+.form-field-toggle .ravesh-toggle-style-1.checked .toggle-off.ticon-3 i{background-position:-60px -40px}
+.form-field-toggle .ravesh-toggle-style-1.checked .toggle-on.ticon-4 i{background-position:0 -60px}
+.form-field-toggle .ravesh-toggle-style-1 .toggle-on.ticon-4 i{background-position:-20px -60px}
+.form-field-toggle .ravesh-toggle-style-1 .toggle-off.ticon-4 i{background-position:-40px -60px}
+.form-field-toggle .ravesh-toggle-style-1.checked .toggle-off.ticon-4 i{background-position:-60px -60px}
+.form-field-toggle .ravesh-toggle-style-1.checked .toggle-on.ticon-5 i{background-position:0 -80px}
+.form-field-toggle .ravesh-toggle-style-1 .toggle-on.ticon-5 i{background-position:-20px -80px}
+.form-field-toggle .ravesh-toggle-style-1 .toggle-off.ticon-5 i{background-position:-40px -80px}
+.form-field-toggle .ravesh-toggle-style-1.checked .toggle-off.ticon-5 i{background-position:-60px -80px}
+
+
+.form-field-toggle .ravesh-toggle-style-1 .toggle-on div,
+.form-field-toggle .ravesh-toggle-style-1 .toggle-off div{
+    display:inline;
+}
+
+[dir=rtl] .form-field-toggle .ravesh-toggle-style-1 .toggle-on div,
+[dir=rtl] .form-field-toggle .ravesh-toggle-style-1 .toggle-off div {
+    margin-left: 8px;
+}
+
+[dir=ltr] .form-field-toggle .ravesh-toggle-style-1 .toggle-on div,
+[dir=ltr] .form-field-toggle .ravesh-toggle-style-1 .toggle-off div {
+    margin-right: 8px;
+}
+
